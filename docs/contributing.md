@@ -30,6 +30,10 @@ Next, navigate to your new qadence fork directory and mark the main qadence repo
 git remote add upstream https://github.com/pasqal-io/qadence-hub.git
 ```
 
+## Publishing to PyPI
+
+We publish each package separately. After you merge your `sub-main` branch to `main,` you can publish your documents and Python package through release. To do this, you need to update the version number in the package's `pyproject.toml`. Then, you create a release with the format of `package_name-v.x.y.z,` where x, y, and z are for version numbers. For example, if you want to publish `qadence-model` with version 1.2.5, you must put `model-v1.2.5` as your release name.
+
 ## Setting up your development environment
 
 We recommended to use `hatch` for managing environments:
